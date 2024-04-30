@@ -1,3 +1,5 @@
+-- Creating the tables:
+
 CREATE TABLE bikes(
     bike_id SERIAL PRIMARY KEY,
     type VARCHAHR(50) NOT NULL,
@@ -20,6 +22,8 @@ CREATE TABLE rentals(
     date_rented DATE NOT NULL DEFAULT NOW(),
     date_returned DATE
 );
+
+-- Inserting the data into bikes table:
 
 INSERT INTO
     bikes(type, size)
